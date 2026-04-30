@@ -42,7 +42,8 @@ module.exports = async () => {
     });
 
     const { data } = await axios.get(
-      "http://localhost:3000/api/v1/auth/github/start?mode=cli",
+      // "http://localhost:3000/api/v1/auth/github?mode=cli"
+      "https://profileintelligenceservice-production.up.railway.app/api/v1/auth/github?mode=cli",
       {
         headers: {
           "X-API-Version": "1",
